@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Bookings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="packages.html">Packages</a> |
+    <a href="booking.html">Booking</a> |
+    <a href="gallery.html">Gallery</a> |
+    <a href="about.html">About Us</a>
+  </nav>
+  <hr>
+
+  <h2>Book Your Trip</h2>
+  <form id="bookingForm" novalidate>
+    <label for="name">Name: <span class="required">*</span></label>
+    <input type="text" id="name" required>
+
+    <label for="start">Start Date: <span class="required">*</span></label>
+    <input type="date" id="start" required>
+
+    <label for="end">End Date: <span class="required">*</span></label>
+    <input type="date" id="end" required>
+
+    <label for="packageSelect">Package: <span class="required">*</span></label>
+    <select id="packageSelect" required></select>
+
+    <label for="promo">Promo Code:</label>
+    <input type="text" id="promo" placeholder="EARLYBIRD">
+
+    <div class="estimator">
+      <strong>Estimated Nights:</strong> <span id="nights">0</span><br>
+      <strong>Estimated Total:</strong> <span id="total">₹0</span>
+    </div>
+
+    <input type="submit" id="submitBtn" value="Submit Booking" disabled>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
